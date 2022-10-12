@@ -15,8 +15,8 @@
     <link rel="apple-touch-icon" href="images/content/favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" href="images/content/favicon.png" />
+    <link rel="stylesheet" href="./css/app.minify.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
     <meta name="theme-color" content="#000" />
   </head>
@@ -24,7 +24,34 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+    <!-- START: Header -->
+    <header class="absolute w-full z-50 px-4">
+      <div class="container mx-auto py-5">
+        <div class="flex flex-stretch items-center">
+          <div class="w-56 items-center flex">
+            <img src="images/design/logo.svg" alt="Luxspace- IKEA Rival" />
+          </div>
+          <!-- <div class="w-full"></div> -->
+          <div class="w-auto">
+            <ul class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex">
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Showcase</a>
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Catalog</a>
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Delivery</a>
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Rewards</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END: Header -->
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
