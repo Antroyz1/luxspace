@@ -46,4 +46,17 @@
     @apply w-20 h-20 -translate-x-1/2 -translate-y-1/2;
     background-size: auto;
   }
+
+  .card .card-shadow {
+    @apply transition duration-300 shadow-none h-full;
+  }
+  .card:hover .card-shadow {
+    @apply shadow-lg;
+  }
+}
+
+@layer utilities {
+  .streched-link {
+    @apply absolute inset-0 z-10 cursor-pointer;
+  }
 }
