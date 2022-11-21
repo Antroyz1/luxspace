@@ -1,8 +1,8 @@
 import { addClass, removeClass } from "./utils-class";
 
-const carouselId = document.getElementById("carousel");
-const carouselItems = carouselId.getElementsByClassName("flex")[0];
-const carouselContainer = carouselId.getElementsByClassName("container")[0];
+const carouselId = document?.getElementById("carousel");
+const carouselItems = carouselId?.getElementsByClassName("flex")[0];
+const carouselContainer = carouselId?.getElementsByClassName("container")[0];
 
 function carouselCalculateOffset() {
   const carouselOffset = carouselContainer.getBoundingClientRect().left;
@@ -24,7 +24,7 @@ function slide(wrapper, items) {
     index = 0,
     allowShift = true;
 
-  wrapper.clasList.add("loaded");
+  wrapper.classList.add("loaded");
   items.onmousedown = dragStart;
 
   items.addEventListener("touchstart", dragStart);
