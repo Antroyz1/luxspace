@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -65,7 +65,7 @@
     @apply flex my-4 flex-col;
   }
   .slider .thumbnail {
-    @apply w-screen order-last -mx-2 overflow-auo flex pl-4;
+    @apply w-screen order-last -mx-2 overflow-auto flex pl-4;
   }
   .slider .thumbnail .item {
     @apply bg-gray-100 relative rounded-lg mb-4 cursor-pointer;
@@ -79,6 +79,10 @@
   }
   .slider .thumbnail .item.selected:after {
     @apply bg-opacity-35 border-opacity-100;
+  }
+  .slider .preview {
+    @apply mb-4 px-4;
+    height: 320px;
   }
 }
 
