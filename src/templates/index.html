@@ -25,7 +25,7 @@
     <!-- Add your site or application content here -->
 
     <!-- START: Header -->
-    <header class="w-full z-50 px-4">
+    <header class="absolute w-full z-50 px-4">
       <div class="container mx-auto py-10">
         <div class="flex flex-stretch items-center">
           <div class="w-56 items-center flex">
@@ -34,7 +34,7 @@
           <div class="w-full"></div>
 
           <!-- START: Menu Hamburger wrapper -->
-          <div class="w-auto">
+          <div class="w-full">
             <ul id="menu" class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100">
               <li class="mx-3 py-6 md:py-0">
                 <a href="#" class="text-black hover:text-white hover:underline">Showcase</a>
@@ -68,7 +68,7 @@
                 </button>
               </li>
               <li class="ml-6">
-                <a href="cart.html" class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled">
+                <a id="header-cart" href="cart.html" class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled">
                   <g class="fill-current" width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.8754 19.9824C9.61762 19.9824 8.59436 21.023 8.59436 22.3021C8.59436 23.5812 9.61762 24.6218 10.8754 24.6218C12.1331 24.6218 13.1564 23.5812 13.1564 22.3021C13.1563 21.023 12.1331 19.9824 10.8754 19.9824ZM10.8754 23.3265C10.3199 23.3265 9.86796 22.8669 9.86796 22.302C9.86796 21.7371 10.3199 21.2775 10.8754 21.2775C11.4308 21.2775 11.8828 21.7371 11.8828 22.302C11.8828 22.867 11.4308 23.3265 10.8754 23.3265Z"
@@ -99,7 +99,7 @@
     <!-- START: Hero Section -->
     <section class="flex items-center hero">
       <!-- START: Section Hero | Left side -->
-      <div class="w-full absolute z-20 inset-0 md:relative md:w-1/2 lg:w-1/2 text-center flex flex-col justify-center hero-caption">
+      <div class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
         <h1 class="text-3xl md:text-5xl leading-tight font-semibold">The room <br class="" />You've Dreaming</h1>
         <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">Kami menyediakan furniture berkelas yang <br class="hidden lg:block" />membuat ruangan terasa homey</h2>
         <div>
