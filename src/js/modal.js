@@ -14,6 +14,7 @@ for (let index = 0; index < modalTriggers.length; index++) {
     });
 
     addClass(modalWrapper, "fixed inset-0 z-40 flex items-center justify-center w-100 min-h-screen");
+
     addClass(modalOverlay, modalWrapperClassNames);
     const modalContent = document.createElement("div");
     modalContent.innerHTML = e.attributes?.["data-content"].value;

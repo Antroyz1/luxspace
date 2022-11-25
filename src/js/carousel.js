@@ -7,8 +7,8 @@ const carouselContainer = carouselId?.getElementsByClassName("container")[0];
 function carouselCalculateOffset() {
   const carouselOffset = carouselContainer.getBoundingClientRect().left;
 
-  carouselItems.style.paddingLeft = "${carouselOffset - 16}px";
-  carouselItems.style.paddingRight = "${carouselOffset - 16}px";
+  carouselItems.style.paddingLeft = `${carouselOffset - 16}px`;
+  carouselItems.style.paddingRight = `${carouselOffset - 16}px`;
 }
 
 function slide(wrapper, items) {
@@ -25,6 +25,7 @@ function slide(wrapper, items) {
     allowShift = true;
 
   wrapper.classList.add("loaded");
+
   items.onmousedown = dragStart;
 
   items.addEventListener("touchstart", dragStart);
@@ -59,7 +60,7 @@ function slide(wrapper, items) {
       posX1 = e.clientX;
     }
 
-    items.style.left = "${items.offsetLeft - posX2}px";
+    items.style.left = `${items.offsetLeft - posX2}px`;
   }
 
   function dragEnd() {
@@ -74,7 +75,7 @@ function slide(wrapper, items) {
     }
 
     document.onmouseup = null;
-    document.onmousedown = null;
+    document.onmousemove = null;
   }
 
   function shiftSlide(direction, action) {
@@ -84,10 +85,10 @@ function slide(wrapper, items) {
       if (!action) posInitial = items.offsetLeft;
 
       if (direction == 1) {
-        items.style.left = "${posInitial - slideSize}px";
+        items.style.left = `${posInitial - slideSize}px`;
         index++;
       } else if (direction == -1) {
-        items.style.left = "${posInitial + slideSize}px";
+        items.style.left = `${posInitial + slideSize}px`;
         index--;
       }
     }
@@ -104,14 +105,17 @@ function slide(wrapper, items) {
       items.style.left = -(slidesLength * slideSize) + "px";
       index = slidesLength - 1;
     }
+
     if (index == slidesLength - itemToShow) {
       items.style.left = -((slidesLength - itemToShow - 1) * slideSize) + "px";
       index = slidesLength - itemToShow - 1;
     }
+
     if (index == slidesLength || index == slidesLength - 1) {
       items.style.left = "0px";
       index = 0;
     }
+
     allowShift = true;
   }
 }
