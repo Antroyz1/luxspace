@@ -1,4 +1,4 @@
-# The Idea
+# BWA Kelas Premium Saingannya IKEA
 
-Basic boilerplate to get started slicing so you don't need to think about configuration.
+Finishing tanggal 29 November 2022
 
